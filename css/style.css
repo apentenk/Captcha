@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Creepster&family=Rubik+Bubbles&family=Shadows+Into+Light&family=Silkscreen:wght@400;700&family=Special+Elite&display=swap');
+
+span{
+    font-size: xx-large;
+    margin: 5px;
+}
+
+.shadows {
+    font-family: "Shadows Into Light";
+    font-weight: 900;
+}
+
+.creepster {
+    font-family: "Creepster";
+    font-weight: 400;
+}
+
+.silkscreen {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+}
+
+.rubik {
+    font-family: "Rubik Bubbles";
+    font-weight: 400;
+}
+
+.bangers {
+    font-family: "Bangers";
+    font-weight: 400;
+}
+
+.elite {
+    font-family: "Special Elite";
+    font-weight: 400;
+}
