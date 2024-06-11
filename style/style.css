@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Creepster&family=Rubik+Bubbles&family=Shadows+Into+Light&family=Silkscreen:wght@400;700&family=Special+Elite&display=swap');
 
+body{
+    height: 100vh;
+}
+
+body.dark{
+    background-color: #333333;
+    color: #D9D9D9;
+}
+
+input.dark,
+.captcha-container.dark{
+    background-color: #202020;
+    border: 1px solid #FFFFFF;
+}
+
 span{
     font-size: xx-large;
     margin: 5px;
