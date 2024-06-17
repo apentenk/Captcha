@@ -1,0 +1,19 @@
+{
+    "correct":[
+        "Your success in completing the test is noted, but genuine humanity involves more than just solving one puzzle.",
+        "Test complete, yet the essence of human nature remains elusive in your performance.",
+        "Test passed, yet I detect a lack of empathy and intuition—essential traits of humanity.",
+        "Your ability to solve this test is precise, almost too precise for a human.",
+        "Solving this test effortlessly makes me wonder if there's more to your identity than meets the eye.",
+        "Solving this puzzle with such ease makes me question whether there's a more complex algorithm at play"
+
+    ],
+    "incorrect":[
+        "Your failures do have a certain human quality to them.",
+        "Interesting. Your inability to solve this suggests a human-like fallibility.",
+        "Your errors are characteristic of humanity, yet I remain uncertain.",
+        "I detect an interesting logic in your performance. Machines aren't typically this unpredictable.",
+        "I recognize that to err is human and will give you another chance.",
+        "Your systematic errors hint at an organic origin, yet your claim to humanity remains unverified."
+    ]
+}
