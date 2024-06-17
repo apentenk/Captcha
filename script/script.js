@@ -130,7 +130,7 @@ function submitCaptcha() {
     let imgBox = document.getElementById("img-box");
     imgBox.style.display = "block";
     let displayImg = document.getElementById("display-img");
-    displayImg.src = "/img/loading.png";
+    displayImg.src = "./img/loading.png";
     displayImg.classList.add("loading");
     let displayText = document.getElementById("display-text");
     displayText.textContent = "Verifying..."
@@ -149,13 +149,13 @@ function verifyCaptcha() {
     document.getElementById("default-message").style.display = "none";
     captchaMessage.style.display = "block";
     if (input === captcha) {
-        displayImg.src = "/img/correct.png";
+        displayImg.src = "./img/correct.png";
         displayText.innerText = "Correct!"
         captchaMessage.textContent = responses.correct[randomExclusive(6)]
         restartButton.textContent = "Verify Again"
     }
     else {
-        displayImg.src = "/img/incorrect.png";
+        displayImg.src = "./img/incorrect.png";
         displayText.innerText = "Incorrect!"
         captchaMessage.textContent = responses.incorrect[randomExclusive(6)]
         restartButton.textContent = "Try Again"
