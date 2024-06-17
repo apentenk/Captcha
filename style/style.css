@@ -1,8 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Creepster&family=Rubik+Bubbles&family=Shadows+Into+Light&family=Silkscreen:wght@400;700&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+/*Layout*/
 
 body{
     height: 100vh;
+    display: flex;
+    align-items: center;
 }
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60%;
+}
+
+.media-box{
+    max-width: fit-content;
+}
+
+
+.contained{
+    height: 100%;
+    width: 100%;
+}
+
+.captcha-button{
+    padding: 10%;
+    margin: 10%;
+    min-width: 40px;
+}
+
+.bottom{
+    margin-top: 0;
+}
+
+
+.captcha-button-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.captcha-button-img{
+    width: 100%;
+}
+
+#view-mode{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    margin: 25px;
+}
+
+#display-img{
+    width: 10%;
+}
+
+
+/* Design*/
+
+input{
+    font-size: 2em;
+    max-width: 100%;
+    color: #D9D9D9;
+    padding-left:10px ;
+}
+
+text{
+    font-size: 3.5em;
+}
+
+.primary-button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+/*Dark Mode*/
 
 body.dark{
     background-color: #333333;
@@ -10,42 +85,83 @@ body.dark{
 }
 
 input.dark,
-.captcha-container.dark{
+.captcha-container.dark,
+.primary-button.dark{
     background-color: #202020;
     border: 1px solid #FFFFFF;
+    align-items: center;
+    color: #D9D9D9;
 }
 
-span{
-    font-size: xx-large;
-    margin: 5px;
+.primary-button.dark:hover{
+    background-color: #000;
 }
 
-.shadows {
-    font-family: "Shadows Into Light";
-    font-weight: 900;
+.captcha-button.dark{
+    border: 1px #FFFFFF solid;
 }
 
-.creepster {
-    font-family: "Creepster";
-    font-weight: 400;
+input.dark:focus{
+    background-color: #000;
 }
 
-.silkscreen {
-    font-family: "Silkscreen", sans-serif;
-    font-weight: 400;
+/*Light Mode*/
+
+body.light{
+    background-color: #f7f7f7;
+    color: #202020;
 }
 
-.rubik {
-    font-family: "Rubik Bubbles";
-    font-weight: 400;
+input.light,
+.captcha-container.light,
+.primary-button.light{
+    background-color: #DCDCDC;
+    border: 1px solid #000;
+    align-items: center;
+    color: #202020;
 }
 
-.bangers {
-    font-family: "Bangers";
-    font-weight: 400;
+.primary-button.light:hover{
+    background-color: #b3b3b3;
 }
 
-.elite {
+.captcha-button.light{
+    border: 1px #000 solid;
+}
+
+input.light:focus{
+    background-color: #b3b3b3;
+}
+
+/*Captcha Styling*/
+
+#generated{
     font-family: "Special Elite";
-    font-weight: 400;
+    display: flex;
+    height: 4.5em;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*Hidden Elements*/
+
+#img-box,
+#restart,
+#captcha-message{
+    display: none;
+}
+
+/*Animating the verification spin*/
+
+.loading{
+    animation: rotation 1.5s linear 0s 1 normal;
+}
+
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
